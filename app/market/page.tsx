@@ -44,7 +44,7 @@ const Market = () => {
                 </div>
                 {market?.map((market: Market) => {
                     return (
-                        <ProductCard onClick={() => buyProduct(market.contractPlace, String(market.price).replace("n", ""))} market={market} />
+                        <ProductCard key={`market-${market.contractPlace}`} onClick={() => buyProduct(market.contractPlace, String(market.price).replace("n", ""))} market={market} />
                     )
                 })}
             </div>
