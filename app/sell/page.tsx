@@ -7,6 +7,7 @@ const SellProduct = () => {
 
     const [productName,setProductName] = useState("")
     const [description,setDescription] = useState("")
+    const [productImage,setProductImage] = useState("")
     const [price,setPrice] = useState(0)
 
 
@@ -14,7 +15,7 @@ const SellProduct = () => {
         address: `0x${process.env.NEXT_PUBLIC_MARKET_ADDRESS}`,
         abi: marketAbi,
         functionName: 'addProduct',
-        args: [productName,description,price],
+        args: [productName,description,productImage,price],
     });
     const { data, isLoading, isSuccess, write, error  } = useContractWrite(config);
 
@@ -38,6 +39,11 @@ const SellProduct = () => {
                     <div className="sm:col-span-2">
                         <label htmlFor="price" className="mb-2 inline-block text-sm text-gray-800 sm:text-base">Price*</label>
                         <input name="price" value={price} onChange={(event)=>setPrice(Number(event.target.value))} className="w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring" />
+                    </div>
+
+                    <div className="sm:col-span-2">
+                        <label htmlFor="price" className="mb-2 inline-block text-sm text-gray-800 sm:text-base">Image URL*</label>
+                        <input name="price" value={productImage} onChange={(event)=>setProductImage(event.target.value)} className="w-full rounded border bg-gray-50 px-3 py-2 text-gray-800 outline-none ring-indigo-300 transition duration-100 focus:ring" />
                     </div>
 
                     <div className="sm:col-span-2">

@@ -3,5 +3,6 @@ export type Market = {
     description:string;
     price:any;
     isSellable:boolean;
+    productImage:string;
     contractPlace:string;
 }

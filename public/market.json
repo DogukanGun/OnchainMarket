@@ -12,6 +12,11 @@
 				"type": "string"
 			},
 			{
+				"internalType": "string",
+				"name": "_productImage",
+				"type": "string"
+			},
+			{
 				"internalType": "uint256",
 				"name": "price",
 				"type": "uint256"
@@ -42,6 +47,11 @@
 						"internalType": "uint256",
 						"name": "price",
 						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "productImage",
+						"type": "string"
 					},
 					{
 						"internalType": "bool",
