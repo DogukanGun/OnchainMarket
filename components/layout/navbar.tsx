@@ -10,7 +10,7 @@ const Navbar = () => {
 
             <nav className="hidden gap-12 lg:flex">
                 <a href="/sell" className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700">Sell Product</a>
-                <a href="#" className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700">Market</a>
+                <a href="/market" className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700">Market</a>
                 <a href="#" className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700">About</a>
             </nav>
 

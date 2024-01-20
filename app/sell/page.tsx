@@ -1,6 +1,6 @@
 "use client"
 
-import { useContractRead, useContractWrite, usePrepareContractWrite } from "wagmi";
+import { useContractWrite, usePrepareContractWrite } from "wagmi";
 import marketAbi from '@/public/market.json'
 import { useState } from "react";
 const SellProduct = () => {
